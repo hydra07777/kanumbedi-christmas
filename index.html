@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Noël - Distribution des cadeaux 🎁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎄 Tirage des cadeaux de Noël 🎁</h1>
+
+    <div class="input-group">
+      <input type="text" id="nameInput" placeholder="Entrer un nom">
+      <button onclick="addName()">Ajouter</button>
+    </div>
+
+    <h2>🎅 Participants</h2>
+    <ul id="nameList"></ul>
+
+    <button class="validate-btn" onclick="shuffleGifts()">
+      🎁 Lancer la distribution
+    </button>
+
+    <h2>🎁 Résultat</h2>
+    <ul id="resultList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
